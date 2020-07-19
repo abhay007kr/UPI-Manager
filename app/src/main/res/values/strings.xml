@@ -4,4 +4,7 @@
     <string name="by">By</string>
     <string name="amount_to_pay">Amount to pay</string>
     <string name="pay">Pay</string>
+    <string name="thousand">1000</string>
+    <string name="payer">X</string>
+    <string name="y">Y</string>
 </resources>
