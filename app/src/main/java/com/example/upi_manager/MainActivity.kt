@@ -3,6 +3,7 @@ package com.example.upi_manager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        val payTv = findViewById<TextView>(R.id.pay_tv)
         val upiRv = findViewById<RecyclerView>(R.id.rv)
         upiRv.layoutManager = LinearLayoutManager(this,RecyclerView.VERTICAL,false)
         /*val adapter = UPIAdapter(upi)
