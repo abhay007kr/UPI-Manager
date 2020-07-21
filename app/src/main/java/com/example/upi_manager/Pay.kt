@@ -1,5 +1,6 @@
 package com.example.upi_manager
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -39,5 +40,11 @@ class Pay : AppCompatActivity() {
                     Toast.makeText(applicationContext,"Failure",Toast.LENGTH_SHORT).show()
                 }
         }
+
+        binding.transactionBtn.setOnClickListener{
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

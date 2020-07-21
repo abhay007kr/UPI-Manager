@@ -7,4 +7,5 @@
     <string name="thousand">1000</string>
     <string name="payer">X</string>
     <string name="y">Y</string>
+    <string name="transaction">View transactions</string>
 </resources>
