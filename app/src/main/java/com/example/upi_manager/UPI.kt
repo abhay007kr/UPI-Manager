@@ -1,3 +1,3 @@
 package com.example.upi_manager
 
-data class UPI(val payer : String , val receiver : String , val money : String)
+data class UPI(var payer: String? ="", var receiver: String? = "", var money: String? = "")

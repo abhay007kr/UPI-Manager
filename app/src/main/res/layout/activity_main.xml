@@ -10,8 +10,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFAFA"
         android:id="@+id/rv"
         android:layout_marginBottom="100dp"
         />
+
 
 </LinearLayout>
