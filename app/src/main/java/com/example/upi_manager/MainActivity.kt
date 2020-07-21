@@ -1,5 +1,6 @@
 package com.example.upi_manager
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -24,7 +25,10 @@ class MainActivity : AppCompatActivity() {
         /*val adapter = UPIAdapter(upi)
 
         upiRv.adapter = adapter*/
-
+        payTv.setOnClickListener{
+            val intent = Intent(this,Pay::class.java)
+            startActivity(intent)
+        }
     //    firestore()
         val db = FirebaseFirestore.getInstance()
         db.collection("UPI")
